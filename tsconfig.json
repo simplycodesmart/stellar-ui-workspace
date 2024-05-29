@@ -2,6 +2,17 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      // "@stellar-ui/st-sdk": [
+      //   "./dist/stellar-ui/st-sdk"
+      // ],
+      "@stellar-ui/st-sdk/*": [
+        "./projects/stellar-ui/st-sdk/*",
+      ],
+      "@stellar-ui/st-sdk": [
+        "./projects/stellar-ui/st-sdk",
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,

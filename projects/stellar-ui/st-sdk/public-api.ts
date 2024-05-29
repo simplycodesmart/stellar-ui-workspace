@@ -1,0 +1,1 @@
+export const STELLAR_UI_KIT = "@stellar-ui/st-sdk";
