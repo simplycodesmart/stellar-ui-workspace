@@ -4,9 +4,7 @@ import { Component } from '@angular/core';
   selector: 'st-button',
   standalone: true,
   imports: [],
-  templateUrl: './button.component.html',
-  styleUrl: './button.component.css'
+  template: `<button class="st-button" role="button"><ng-content></ng-content></button>`,
+  styles: []
 })
-export class ButtonComponent {
-
-}
+export class ButtonComponent {}
