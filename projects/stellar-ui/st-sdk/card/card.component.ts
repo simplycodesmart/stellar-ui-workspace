@@ -13,8 +13,13 @@ import { Component } from '@angular/core';
     `
     .card {
       position: relative;
-      height: 12rem;
-      box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.05);
+      min-height: 5rem;
+      -webkit-box-shadow: 5px 3px 24px 7px rgba(20,20,20,0.39);
+      -moz-box-shadow: 5px 3px 24px 7px rgba(20,20,20,0.39);
+      box-shadow: 5px 3px 24px 7px rgba(20,20,20,0.39);
+      position: relative;
+      margin: 10px;
+      border-radius: 10px;
     }
 
     .card .container {
