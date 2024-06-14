@@ -1,0 +1,458 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [],
+    "modules": [],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "BlueAccordion",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/stellar-ui/st-sdk/src/stories/accordion.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "() => ({\r\n    component: AccordionComponent,\r\n    props: {\r\n        items: sampleItems,\r\n        accordionClass: 'blue-accordion',\r\n    },\r\n})"
+            },
+            {
+                "name": "CardWithFooter",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/stellar-ui/st-sdk/src/stories/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n    render: (args: { content: string }) => ({\r\n        props: args,\r\n        template: `\r\n          <st-card>\r\n            ${args.content}\r\n            <footer>Footer</footer>\r\n          </st-card>\r\n        `,\r\n    }),\r\n    args: {\r\n        content: 'This card has a footer',\r\n    },\r\n}"
+            },
+            {
+                "name": "CardWithHeader",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/stellar-ui/st-sdk/src/stories/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n    render: (args: { content: string }) => ({\r\n        props: args,\r\n        template: `\r\n          <st-card>\r\n            <h1>Header</h1>\r\n            ${args.content}\r\n          </st-card>\r\n        `,\r\n    }),\r\n    args: {\r\n        content: 'This card has a header',\r\n    },\r\n}"
+            },
+            {
+                "name": "CustomButton",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/stellar-ui/st-sdk/src/stories/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n    render: (args: { content: string, buttonClass: string }) => ({\r\n        props: args,\r\n        template: `<st-button >${args.content}</st-button>`,\r\n    }),\r\n    args: {\r\n        content: 'Custom Button',\r\n        color: '#008080',\r\n    },\r\n}"
+            },
+            {
+                "name": "DefaultAccordion",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/stellar-ui/st-sdk/src/stories/accordion.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "() => ({\r\n    component: AccordionComponent,\r\n    props: {\r\n        items: sampleItems,\r\n    },\r\n})"
+            },
+            {
+                "name": "DefaultCard",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/stellar-ui/st-sdk/src/stories/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n    render: (args: { content: string }) => ({\r\n        props: args,\r\n        template: `<st-card>${args.content}</st-card>`,\r\n    }),\r\n    args: {\r\n        content: 'This is a default card',\r\n    },\r\n}"
+            },
+            {
+                "name": "EmojiButton",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/stellar-ui/st-sdk/src/stories/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n    render: (args: { content: string, buttonClass: string }) => ({\r\n        props: args,\r\n        template: `<st-button [buttonClass]=\"buttonClass\">${args.content}</st-button>`,\r\n    }),\r\n    args: {\r\n        content: '😀 😎 👍 💯',\r\n        buttonClass: 'emoji',\r\n    },\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/stellar-ui/st-sdk/src/stories/accordion.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<AccordionComponent>",
+                "defaultValue": "{\r\n    title: 'Componets/Accordion',\r\n    component: AccordionComponent,\r\n    decorators: [\r\n        moduleMetadata({\r\n            imports: [AccordionComponent],\r\n        }),\r\n    ],\r\n    tags: ['autodocs'],\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/stellar-ui/st-sdk/src/stories/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<ButtonComponent>",
+                "defaultValue": "{\r\n    title: 'Atoms/Button',\r\n    component: ButtonComponent,\r\n    decorators: [\r\n        moduleMetadata({\r\n            imports: [ButtonComponent],\r\n        }),\r\n    ],\r\n    tags: ['autodocs'],\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/stellar-ui/st-sdk/src/stories/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<CardComponent>",
+                "defaultValue": "{\r\n    title: 'Atoms/Card',\r\n    component: CardComponent,\r\n    decorators: [\r\n        moduleMetadata({\r\n            imports: [CardComponent],\r\n        }),\r\n    ],\r\n    tags: ['autodocs'],\r\n}"
+            },
+            {
+                "name": "preview",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/stellar-ui/st-sdk/.storybook/preview.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Preview",
+                "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "PrimaryButton",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/stellar-ui/st-sdk/src/stories/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n    render: (args: { content: string, buttonClass: string }) => ({\r\n        props: args,\r\n        template: `<st-button [buttonClass]=\"buttonClass\">${args.content}</st-button>`,\r\n    }),\r\n    args: {\r\n        content: 'Primary Button',\r\n        buttonClass: 'primary',\r\n    },\r\n}"
+            },
+            {
+                "name": "sampleItems",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/stellar-ui/st-sdk/src/stories/accordion.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[\r\n    { title: 'Item 1', content: 'Content for Item 1' },\r\n    { title: 'Item 2', content: 'Content for Item 2' },\r\n]"
+            },
+            {
+                "name": "SecondaryButton",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/stellar-ui/st-sdk/src/stories/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n    render: (args: { content: string, buttonClass: string }) => ({\r\n        props: args,\r\n        template: `<st-button [buttonClass]=\"buttonClass\">${args.content}</st-button>`,\r\n    }),\r\n    args: {\r\n        content: 'Secondary Button',\r\n        buttonClass: 'secondary',\r\n    },\r\n}"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "projects/stellar-ui/st-sdk/src/stories/accordion.stories.ts": [
+                {
+                    "name": "BlueAccordion",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/stellar-ui/st-sdk/src/stories/accordion.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "() => ({\r\n    component: AccordionComponent,\r\n    props: {\r\n        items: sampleItems,\r\n        accordionClass: 'blue-accordion',\r\n    },\r\n})"
+                },
+                {
+                    "name": "DefaultAccordion",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/stellar-ui/st-sdk/src/stories/accordion.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "() => ({\r\n    component: AccordionComponent,\r\n    props: {\r\n        items: sampleItems,\r\n    },\r\n})"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/stellar-ui/st-sdk/src/stories/accordion.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<AccordionComponent>",
+                    "defaultValue": "{\r\n    title: 'Componets/Accordion',\r\n    component: AccordionComponent,\r\n    decorators: [\r\n        moduleMetadata({\r\n            imports: [AccordionComponent],\r\n        }),\r\n    ],\r\n    tags: ['autodocs'],\r\n}"
+                },
+                {
+                    "name": "sampleItems",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/stellar-ui/st-sdk/src/stories/accordion.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[\r\n    { title: 'Item 1', content: 'Content for Item 1' },\r\n    { title: 'Item 2', content: 'Content for Item 2' },\r\n]"
+                }
+            ],
+            "projects/stellar-ui/st-sdk/src/stories/card.stories.ts": [
+                {
+                    "name": "CardWithFooter",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/stellar-ui/st-sdk/src/stories/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n    render: (args: { content: string }) => ({\r\n        props: args,\r\n        template: `\r\n          <st-card>\r\n            ${args.content}\r\n            <footer>Footer</footer>\r\n          </st-card>\r\n        `,\r\n    }),\r\n    args: {\r\n        content: 'This card has a footer',\r\n    },\r\n}"
+                },
+                {
+                    "name": "CardWithHeader",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/stellar-ui/st-sdk/src/stories/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n    render: (args: { content: string }) => ({\r\n        props: args,\r\n        template: `\r\n          <st-card>\r\n            <h1>Header</h1>\r\n            ${args.content}\r\n          </st-card>\r\n        `,\r\n    }),\r\n    args: {\r\n        content: 'This card has a header',\r\n    },\r\n}"
+                },
+                {
+                    "name": "DefaultCard",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/stellar-ui/st-sdk/src/stories/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n    render: (args: { content: string }) => ({\r\n        props: args,\r\n        template: `<st-card>${args.content}</st-card>`,\r\n    }),\r\n    args: {\r\n        content: 'This is a default card',\r\n    },\r\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/stellar-ui/st-sdk/src/stories/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<CardComponent>",
+                    "defaultValue": "{\r\n    title: 'Atoms/Card',\r\n    component: CardComponent,\r\n    decorators: [\r\n        moduleMetadata({\r\n            imports: [CardComponent],\r\n        }),\r\n    ],\r\n    tags: ['autodocs'],\r\n}"
+                }
+            ],
+            "projects/stellar-ui/st-sdk/src/stories/button.stories.ts": [
+                {
+                    "name": "CustomButton",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/stellar-ui/st-sdk/src/stories/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n    render: (args: { content: string, buttonClass: string }) => ({\r\n        props: args,\r\n        template: `<st-button >${args.content}</st-button>`,\r\n    }),\r\n    args: {\r\n        content: 'Custom Button',\r\n        color: '#008080',\r\n    },\r\n}"
+                },
+                {
+                    "name": "EmojiButton",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/stellar-ui/st-sdk/src/stories/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n    render: (args: { content: string, buttonClass: string }) => ({\r\n        props: args,\r\n        template: `<st-button [buttonClass]=\"buttonClass\">${args.content}</st-button>`,\r\n    }),\r\n    args: {\r\n        content: '😀 😎 👍 💯',\r\n        buttonClass: 'emoji',\r\n    },\r\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/stellar-ui/st-sdk/src/stories/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<ButtonComponent>",
+                    "defaultValue": "{\r\n    title: 'Atoms/Button',\r\n    component: ButtonComponent,\r\n    decorators: [\r\n        moduleMetadata({\r\n            imports: [ButtonComponent],\r\n        }),\r\n    ],\r\n    tags: ['autodocs'],\r\n}"
+                },
+                {
+                    "name": "PrimaryButton",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/stellar-ui/st-sdk/src/stories/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n    render: (args: { content: string, buttonClass: string }) => ({\r\n        props: args,\r\n        template: `<st-button [buttonClass]=\"buttonClass\">${args.content}</st-button>`,\r\n    }),\r\n    args: {\r\n        content: 'Primary Button',\r\n        buttonClass: 'primary',\r\n    },\r\n}"
+                },
+                {
+                    "name": "SecondaryButton",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/stellar-ui/st-sdk/src/stories/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n    render: (args: { content: string, buttonClass: string }) => ({\r\n        props: args,\r\n        template: `<st-button [buttonClass]=\"buttonClass\">${args.content}</st-button>`,\r\n    }),\r\n    args: {\r\n        content: 'Secondary Button',\r\n        buttonClass: 'secondary',\r\n    },\r\n}"
+                }
+            ],
+            "projects/stellar-ui/st-sdk/.storybook/preview.ts": [
+                {
+                    "name": "preview",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/stellar-ui/st-sdk/.storybook/preview.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Preview",
+                    "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": [],
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "projects/stellar-ui/st-sdk/.storybook/preview.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "preview",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/stellar-ui/st-sdk/src/stories/accordion.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BlueAccordion",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/stellar-ui/st-sdk/src/stories/accordion.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "DefaultAccordion",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/stellar-ui/st-sdk/src/stories/accordion.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/stellar-ui/st-sdk/src/stories/accordion.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "sampleItems",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/stellar-ui/st-sdk/src/stories/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "CustomButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/stellar-ui/st-sdk/src/stories/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "EmojiButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/stellar-ui/st-sdk/src/stories/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/stellar-ui/st-sdk/src/stories/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PrimaryButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/stellar-ui/st-sdk/src/stories/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SecondaryButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/stellar-ui/st-sdk/src/stories/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "CardWithFooter",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/stellar-ui/st-sdk/src/stories/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "CardWithHeader",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/stellar-ui/st-sdk/src/stories/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "DefaultCard",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/stellar-ui/st-sdk/src/stories/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}

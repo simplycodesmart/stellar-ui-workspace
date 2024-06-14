@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build-storybook": "ng run @stellar-ui/st-sdk:build-storybook",
+    "storybook": "ng run @stellar-ui/st-sdk:storybook"
   },
   "private": true,
   "dependencies": {
@@ -26,6 +28,15 @@
     "@angular-devkit/build-angular": "^18.0.2",
     "@angular/cli": "^18.0.0",
     "@angular/compiler-cli": "^18.0.0",
+    "@chromatic-com/storybook": "^1.5.0",
+    "@compodoc/compodoc": "^1.1.25",
+    "@storybook/addon-docs": "^8.1.6",
+    "@storybook/addon-essentials": "^8.1.6",
+    "@storybook/addon-interactions": "^8.1.6",
+    "@storybook/addon-links": "^8.1.6",
+    "@stellar-ui/st-sdk": "^8.1.6",
+    "@storybook/blocks": "^8.1.6",
+    "@storybook/test": "^8.1.6",
     "@types/jasmine": "~5.1.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
@@ -34,6 +45,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "^18.0.0",
+    "storybook": "^8.1.6",
     "typescript": "~5.4.2"
   }
 }

@@ -33,6 +33,36 @@
               "zone.js/testing"
             ]
           }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": "projects/stellar-ui/st-sdk/.storybook",
+            "browserTarget": "@stellar-ui/st-sdk:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/stellar-ui/st-sdk"
+            ],
+            "port": 6006
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/stellar-ui/st-sdk/.storybook",
+            "browserTarget": "@stellar-ui/st-sdk:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/stellar-ui/st-sdk"
+            ],
+            "outputDir": "dist/storybook/@stellar-ui/st-sdk"
+          }
         }
       }
     },
@@ -127,6 +157,36 @@
               "projects/demo-app/src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": "projects/demo-app/.storybook",
+            "browserTarget": "demo-app:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/demo-app"
+            ],
+            "port": 6006
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/demo-app/.storybook",
+            "browserTarget": "demo-app:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/demo-app"
+            ],
+            "outputDir": "dist/storybook/demo-app"
           }
         }
       }
